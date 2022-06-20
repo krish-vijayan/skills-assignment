@@ -1,0 +1,261 @@
+.App {
+  text-align:center;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../public/fonts/Roboto-Thin.ttf);
+
+}
+.Name {
+  font-family:Roboto;
+  color:black;
+  font-size: 70px;
+  position:absolute;
+  bottom:520px;
+  left:450px;
+  
+}
+.School {
+  font-family:Roboto;
+  color:black; 
+  position: absolute;
+  font-size: 50px;
+  bottom: 240px;
+  left:400px;
+}
+.School-logo {
+  position:absolute;
+  width:400px;
+  left:440px;
+  bottom:100px;
+  
+}
+.Linkedin-qr {
+  position:absolute;
+  width:150px;
+  height:150px;
+  left:40px;
+  top:20px;
+  border: 3px solid black;
+  transition: transform .2s;
+  
+}
+.Linkedin-qr:hover{
+  transform:scale(1.2);
+}
+.glow-button:hover {
+  color: rgb(255, 213, 0);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+.Name-button:hover {
+  width: 200px;
+}
+.Photo-button:hover {
+  width: 200px;
+}
+.School-button:hover {
+  width: 200px;
+}
+.Hobby-button:hover {
+  width: 200px;
+}
+.Interest-button:hover {
+  width: 200px;
+}
+.Program-button:hover {
+  width: 200px;
+}
+.Linkedin-button:hover {
+  width: 200px;
+}
+
+.Name-button {
+  position:absolute;
+  font-family:Roboto;
+  font-size:40px;
+  left:1050px;
+  bottom:550px;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+
+
+.Photo-button {
+  font-family: Roboto;
+  position: absolute;
+  font-size:40px;
+  bottom: 490px;
+  left: 1050px;
+  width:0px;
+  height:wrap;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+.School-button {
+  font-family: Roboto;
+  position:absolute;
+  font-size:40px;
+  left:1050px;
+  bottom: 430px;
+  width:230px;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+
+.Hobby-button {
+  font-family: Roboto;
+  position:absolute;
+  font-size:40px;
+  left:1050px;
+  bottom: 370px;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+
+.Interest-button {
+  position:absolute;
+  font-family: Roboto;
+  font-size:40px;
+  left:1050px;
+  bottom:310px;
+  width:0px;
+  height:wrap;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+
+.Program-button {
+  position: absolute;
+  font-family:Roboto;
+  font-size:40px;
+  bottom: 250px;
+  left: 1050px;
+  height:wrap;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+
+.Linkedin-button {
+  position: absolute;
+  font-family:Roboto;
+  font-size:40px;
+  bottom: 190px;
+  left: 1050px;
+  width:0px;
+  height:wrap;
+  border-radius: 10px ;
+  border-color: #FFD700;
+  background:rgb(115, 77, 0);
+  transition: width 0.5s;
+  color:transparent;
+}
+.Program {
+  font-family: Roboto;
+  color:black; 
+  position: absolute;
+  font-size: 50px;
+  bottom: 10px;
+  left:360px;
+}
+
+
+.Hobbies {
+  font-family: Roboto;
+  color:black;
+  position: absolute;
+  top:390px;
+  width:500px;  
+  left:180px;
+}
+.Interest {
+  font-family:Roboto;
+  color:black;
+  position: absolute;
+  top:390px;
+  width:500px;  
+  left:620px;
+}
+
+
+.Instruction {
+  font-family: Roboto;
+  color:black;
+  position: absolute;
+  top:120px;
+  width:300px;  
+  left:485px;
+}
+.Pfp {
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  left:480px;
+  border: 4px solid black;  
+}
+
+.Linkedin-box {
+  display: inline-block;
+  position:absolute;
+  width: 230px;
+  height: 645px;
+  top:0px;
+  border-right: 10px double rgba(0, 0, 0, .2);
+  background: #766400;
+  left:0px;
+
+}
+
+.App-header {
+  background-color: #FFD700;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
