@@ -1,3 +1,3 @@
-# skills assignment 
+# Skills Assignment 
 
-This will be the repository for the group 198 skills assignment!
+Repository for the group 198 skills assignment.
