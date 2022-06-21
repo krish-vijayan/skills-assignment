@@ -28,7 +28,7 @@ function Pfp() {
 
      const settingPfp = () => {
         setPfp(krish.pfp);
-        setC1("Pfp")
+        setC1("Pfp")    
         setCounter(counter + 1);
         if (counter > 0) {
             setCounter(0);
@@ -158,7 +158,6 @@ function Linkedin(){
     }
     return (
     <div>
-        <div className="Linkedin-box"></div>
         <button className="glow-button Linkedin-button" onClick={settingLinkedin}>Linkedin</button>
         <a target="_blank" href={link}>
             <img src={linkedin} className={c1}/>
@@ -166,4 +165,8 @@ function Linkedin(){
     </div>
     );
 }
-export { Name, Pfp, Instructions, MySchool, Hobbies, Interests, Program, Linkedin };
+
+function Texture(){
+    return <img src="../images/texture.png" className="Texture"/>
+}
+export { Name, Pfp, Instructions, MySchool, Hobbies, Interests, Program, Linkedin, Texture };
