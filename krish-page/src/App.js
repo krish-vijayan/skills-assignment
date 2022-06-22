@@ -33,6 +33,23 @@ function App() {
                     <Linkedin/>    
                     </>    
                   }/>
+
+                  <Route exact path="/brandon" element={<>
+                  {/*ENTER YOUR STUFF HERE*/}
+                  </>}/>
+                  
+                  <Route exact path="/serena" element={<>
+                  {/*ENTER YOUR STUFF HERE*/}
+                  </>}/>
+                 
+                 <Route exact path="/taeyun" element={<>
+                  {/*ENTER YOUR STUFF HERE*/}
+                  </>}/>
+
+                 <Route exact path="/parsh" element={<>
+                  {/*ENTER YOUR STUFF HERE*/}
+                  </>}/>
+                
                  </Routes>
               </header>
            </div>
