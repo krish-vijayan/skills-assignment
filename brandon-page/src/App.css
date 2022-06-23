@@ -1,0 +1,82 @@
+.App {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.App-header {
+  background-color: #dbd3ca;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+button:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(131, 100, 219, 0.4);
+}
+
+button {
+  font-size:40px;
+  width:300px;
+  height:300px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background:rgb(37, 110, 179);
+  transition: width 0.5s;
+}
+
+/* //////////////////// Components ////////////////// */
+
+.Photo {
+  margin: auto;
+  width: 50%;
+  top: 50px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 850px;
+  width: 600px;
+  padding: 25px;
+  text-align: center;
+}
+
+.Name {
+  position: fixed;
+}
+
+.Interests {
+  position: fixed;
+  
+}
+
+.School {
+  position: fixed;
+}
+
+.Program {
+  position: fixed;
+}
+
+
+.socials {
+  position: relative;
+  height: 250px;
+  width: 550px;
+}
+
+.LinkedIn {
+  position: absolute;
+  left: 0;
+}
+
+.GitHub {
+  position: absolute;
+  right: 0;
+}
+
