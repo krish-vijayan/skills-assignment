@@ -1,104 +1,99 @@
 import data from './about-me';
 import React, { useState } from 'react';
 
-function Test() {
-    const [style, setStyle] = useState({display: 'none'});
-
-    return (
-        <div className="test">
-            <div style={{border: '1px solid gray', width: 300, height: 300, padding: 10, margin: 100}}
-                 onMouseEnter={e => {
-                     setStyle({display: 'block'});
-                 }}
-                 onMouseLeave={e => {
-                     setStyle({display: 'none'})
-                 }}
-            >
-                <button style={style}>Click</button>
-            </div>
-        </div>
-    );
-}
-
-
-function Photo() {
-    const [photo, setPhoto] = useState('');
-
-    const settingPhoto = () => {
-        setPhoto(data.photo);
-    }
-
-    return (
-        <div className="Photo">
-            <button className="glow-button" onClick={settingPhoto}>Photo</button>
-            <img style={{width: 250, height: 250}} alt="pfp" src={photo}></img>
-        </div>
-    );
-}
-
 function Name() {
     const [name, setName] = useState('');
-
+    var toggle = false;
     const settingName = () => {
-        setName(data.name);
+        if (toggle) {
+            setName(null);
+            toggle = false;
+        } else {
+            setName(data.name);
+            toggle = true;
+        }
     }
 
     return (
-        <div className="Name">
-            <button className="glow-button" onClick={settingName}>Name</button>
-            <h1 class="Name">{name}</h1>
+        <div className="Name-button">
+            <button className="content-button" onClick={settingName}>Name</button>
+            <h1 className="content Name">{name}</h1>
         </div>
     );
 }
 
+function Interests() {
+    const [interest, setInterest] = useState('');
+    var toggle = false;
+
+    const settingInterest = () => {
+        if (toggle) {
+            setInterest(null);
+            toggle = false;
+        } else {
+            setInterest(data.interests);
+            toggle = true;
+        }
+    }
+
+    return (
+        <div className="Interests-button">
+            <button className="content-button" onClick={settingInterest}>Interests</button>
+            <h1 className="content Interests">{interest}</h1>
+        </div>
+    );
+}
+
+
 function School() {
-    const [school, setSchool] = useState('');
+    const [ school, setSchool ] = useState('');
+    var toggle = false;
 
     const settingSchool = () => {
-        setSchool(data.school);
+        if (toggle) {
+            setSchool(null);
+            toggle = false;
+        } else {
+            setSchool(data.school);
+            toggle = true;
+        } 
     }
+
     return (
-        <div className="School">
-            <button className=" glow-button" onClick={settingSchool}>School</button>
-            <img style={{width: 250, height: 250}} alt="University of Waterloo" src={school}></img>
+        <div className="School-button">
+            <button className="content-button" onClick={settingSchool}>School</button>
+            <h1 className="School" alt="University of Waterloo">{school}</h1> 
         </div>
     );
 }
 
 function Program() {
     const [program, setProgram] = useState('');
+    var toggle = false;
 
     const settingProgram = () => {
-        setProgram(data.program);
+        if (toggle) {
+            setProgram(null);
+            toggle = false;
+        } else {
+            setProgram(data.program);
+            toggle = true;
+        }
     }
     return (
-        <div className="Program">
-            <button className="glow-button" onClick={settingProgram}>Program</button>
-            <h1>{program}</h1>
+        <div className="Program-button">
+            <button className="content-button" onClick={settingProgram}>Program</button>
+            <h1 className="content Program">{program}</h1>
         </div>
     );
 }
 
-
-function Interests() {
-    const [interest, setInterest] = useState('');
-    const settingInterest = () => {
-        setInterest(data.interests);
-    }
-
-    return (
-        <div className="Interests">
-            <button className="glow-button" onClick={settingInterest}>Interests</button>
-            <h1>{interest}</h1>
-        </div>
-    );
-}
 
 function LinkedIn() {
     return (
         <div className="LinkedIn">
             <a target=" blank" href={data.linkedin}>
-                <img style={{width: 250, height: 250}} 
+                <img style={{width: 150, height: 150}} 
                 alt="linkedin" src={require('../images/linkedIn_logo.png')}></img>
             </a>
         </div>
@@ -109,11 +104,11 @@ function GitHub() {
     return (
         <div className="GitHub">
             <a target=" blank" href={data.github}>
-                <img style={{width: 250, height: 250}}
+                <img style={{width: 150, height: 150}}
                 alt="github" src={require('../images/github_logo.png')}></img>
             </a>
         </div>
     );
 }
 
-export { Test, Name, Photo, School, Interests, Program, LinkedIn, GitHub };
+export { Name, School, Interests, Program, LinkedIn, GitHub };
